@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@geist-ui/react": "^2.2.5",
     "@hookform/resolvers": "^5.2.2",
     "next": "16.2.6",
     "react": "19.2.4",
