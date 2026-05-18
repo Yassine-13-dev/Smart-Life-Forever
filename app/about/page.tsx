@@ -302,7 +302,7 @@ export default function AboutPage() {
             gap: 16,
           }}>
             {expertise.map((item) => (
-              <div key={item.title} style={{
+              <div key={item.title} className="expertise-card" style={{
                 background: "#fff",
                 borderRadius: 14,
                 border: "1px solid #e2e8f0",
@@ -311,16 +311,7 @@ export default function AboutPage() {
                 gap: 16,
                 alignItems: "flex-start",
                 transition: "box-shadow .2s, transform .2s",
-              }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)";
-                  (e.currentTarget as HTMLElement).style.boxShadow = "0 8px 24px rgba(0,120,215,.1)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
-                  (e.currentTarget as HTMLElement).style.boxShadow = "none";
-                }}
-              >
+              }}>
                 <div style={{
                   width: 48, height: 48, borderRadius: 12,
                   background: item.color,

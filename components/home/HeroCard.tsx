@@ -1,4 +1,6 @@
 // components/home/HeroCard.tsx
+"use client";
+
 import Link from "next/link";
 
 export interface HeroCardProps {
