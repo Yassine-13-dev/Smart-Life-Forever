@@ -64,29 +64,49 @@ export const footerText = {
 
 export const homePageCards = [
   {
+    icon: "🏢",
+    tag: "Notre identité",
     title: "Notre histoire",
     description: "Découvrez comment Smart Life Forever accompagne la transformation des collectivités.",
     href: "/about",
+    ctaLabel: "En savoir plus",
+    bgColor: "#e6f2fb",
   },
   {
+    icon: "⚙️",
+    tag: "Expertise",
     title: "Services clés",
     description: "Solutions sur mesure en digitalisation, formation et conseil pour les entreprises locales.",
     href: "/services",
+    ctaLabel: "Explorer",
+    bgColor: "#fff3e0",
   },
   {
+    icon: "🚀",
+    tag: "Vision",
     title: "Projets concrets",
     description: "Projets locaux porteurs de sens et d'impact pour les villes camerounaises.",
     href: "/projects",
+    ctaLabel: "Voir les projets",
+    bgColor: "#f3e5f5",
   },
   {
+    icon: "🎓",
+    tag: "Carrières",
     title: "Recrutement",
     description: "Stages, formations et opportunités pour les talents qui veulent grandir avec nous.",
     href: "/careers",
+    ctaLabel: "Voir les offres",
+    bgColor: "#e8f5e9",
   },
   {
+    icon: "✉️",
+    tag: "Contact",
     title: "Contactez-nous",
     description: "Échangeons sur votre projet, votre association ou votre collectivité.",
     href: "/contact",
+    ctaLabel: "Écrire un message",
+    bgColor: "#e3f2fd",
   },
 ];
 
