@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -54,17 +55,22 @@ export default function Navbar() {
           textDecoration: "none",
           flexShrink: 0,
         }}>
-          <span style={{
-            width: 32, height: 32,
+          <div style={{
+            width: 36,
+            height: 36,
             borderRadius: 8,
-            background: "var(--blue)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "#fff",
-            fontSize: 14,
-            fontWeight: 900,
-          }}>S</span>
+            overflow: "hidden",
+            flexShrink: 0,
+            position: "relative",
+          }}>
+            <Image
+              src="/images/smart.png"
+              alt="SMART LIFE FOREVER logo"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
+          </div>
           SMART LIFE FOREVER
         </Link>
 

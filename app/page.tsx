@@ -1,6 +1,7 @@
 // app/page.tsx  ← Page d'accueil principale
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import HeroCard, { type HeroCardProps } from "@/components/home/HeroCard";
 
 export const metadata: Metadata = {
@@ -93,13 +94,25 @@ export default function HomePage() {
 
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section style={{
-        background: "linear-gradient(135deg, #0078d7 0%, #005a9e 100%)",
+        background: "linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 90, 158, 0.85) 100%), url(/images/smart.png) center/cover",
         color: "#fff",
         padding: "72px 24px 56px",
         textAlign: "center",
         position: "relative",
         overflow: "hidden",
       }}>
+        {/* Logo en filigrane — fond du hero */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          pointerEvents: "none",
+        }}>
+          
+        </div>
+
         {/* Cercles décoratifs */}
         <div style={{ position: "absolute", top: -80, right: -80, width: 320, height: 320, borderRadius: "50%", background: "rgba(255,255,255,.05)", pointerEvents: "none" }} />
         <div style={{ position: "absolute", bottom: -60, left: -50, width: 220, height: 220, borderRadius: "50%", background: "rgba(255,255,255,.04)", pointerEvents: "none" }} />
