@@ -22,6 +22,13 @@ export const metadata: Metadata = {
     locale: "fr_CM",
     type: "website",
   },
+  icons: {
+    icon: [
+      { url: "/images/smart.png", type: "image/png" },
+    ],
+    shortcut: "/images/smart.png",
+    apple: "/images/smart.png",
+  },
 };
  
 export default function RootLayout({
